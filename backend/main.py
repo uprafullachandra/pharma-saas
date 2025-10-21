@@ -3,8 +3,8 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 
 from sqlalchemy.orm import Session
-from backend.database import Base, engine, SessionLocal
-from backend.models import Patient
+from database import Base, engine, SessionLocal
+from models import Patient
 
 app = FastAPI(title="Pharma SaaS Backend")
 
